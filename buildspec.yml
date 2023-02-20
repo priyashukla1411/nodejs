@@ -6,10 +6,8 @@ phases:
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...
-      - echo $AWS_DEFAULT_REGION
       - aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 614694465844.dkr.ecr.ap-south-1.amazonaws.com
-      - REPOSITORY_NAME="ecr"      
-      - REPOSITORY_URI=614694465844.dkr.ecr.ap-south-1.amazonaws.com/nodeu:latest
+     
   build:
     commands:
       - echo Build started on `date`
