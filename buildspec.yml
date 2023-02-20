@@ -21,7 +21,7 @@ phases:
       - echo Pushing the Docker image...
       - docker push 614694465844.dkr.ecr.ap-south-1.amazonaws.com/nodeees:latest
       - echo Writing image definitions file...
-      - printf '[{"name":"nodees","imageUri":"614694465844.dkr.ecr.ap-south-1.amazonaws.com/nodeees:latest"}]' 614694465844.dkr.ecr.ap-south-1.amazonaws.com/nodeees:latest > imagedefinitions.json
+      - printf '[{"name":"node-ecs-cluster-dev","imageUri":"614694465844.dkr.ecr.ap-south-1.amazonaws.com/nodeees:latest"}]' 614694465844.dkr.ecr.ap-south-1.amazonaws.com/nodeees:latest > imagedefinitions.json
 
 artifacts:
     files:
