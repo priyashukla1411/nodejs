@@ -14,6 +14,8 @@ phases:
       - echo Building the Docker image...          
       - docker build -t nodejss .
       - docker tag nodejss:latest 614694465844.dkr.ecr.ap-south-1.amazonaws.com/nodejss:latest
+      
+  
      
   post_build:
     commands:
